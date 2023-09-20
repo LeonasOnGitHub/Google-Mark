@@ -10,7 +10,7 @@
     <div id="map" style="width: 100%; height: 1000px;"></div>
     <script>
 
-        function getCordsFromAdress(adress, map) {
+        function addMarkerWithAdress(adress, map) {
             let httpRequest = new XMLHttpRequest();
             const url = 'https://nominatim.openstreetmap.org/search?format=json&q=' + encodeURI(adress.street + ', ' + adress.pc);
 
@@ -56,7 +56,7 @@
             });
 
             for (let adress of adresses) {
-                getCordsFromAdress(adress, map)
+                addMarkerWithAdress(adress, map)
             }
         }
 
