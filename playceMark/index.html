@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Maps Marker</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKxxfPPPXZujgKM_eFExaV8UHWwXmCEO4"></script>
+</head>
+<body>
+    <div id="map" style="width: 100%; height: 1000px;"></div>
+    <script>
+        function initMap() {
+
+            const coords = [{ lat: 52.5052606, lng: 13.401958 }, { lat: 52.5110731, lng: 13.4096412 }, { lat: 52.5154733, lng: 13.3841511 }];
+
+            // starting location
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: { lat: 52.5052606, lng: 13.401958 } 
+            });
+
+            for (let coord of coords) {
+                var startMarker = new google.maps.Marker({
+                position: coord,
+                map: map
+            });
+            }
+        }
+
+        // Google Maps API nach dem Laden der Seite initialisieren
+        google.maps.event.addDomListener(window, 'load', initMap);
+    </script>
+</body>
+</html>

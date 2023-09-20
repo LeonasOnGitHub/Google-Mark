@@ -1,0 +1,71 @@
+/* Elemente mit Hilfe des tag-Name referenzieren und gestalten: */
+/* body {
+     background-color: #ff7571;
+     background-image: url("../images/butterfly.gif");
+     background-repeat: repeat;
+} */
+
+h1 {
+  font-family: arial, verdana, sans-serif; 
+}
+
+h2 {
+  font-family: 'Courier New',  monospace; 
+}
+
+h4 { 
+	font-family: "Times New Roman", serif; 
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+/* Elemente mit Hilfe von CSS-class gestalten: */
+.classForA {
+  font-style: italic;
+}
+
+/* Das Element mit der id "faq" gestalten: */
+#faq {
+  color:green;
+}
+
+/* Für <form> */
+
+/* input[type=text], input[type=password], input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin: 8px 8px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4094b0;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+ */
