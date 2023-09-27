@@ -1,0 +1,29 @@
+<div class="jr-dashboard-container">
+
+<ul class="jr-dashboard-list">{{#each marks}}
+
+    <li class="jr-dashboard-list-item">
+
+        {{#if this.value}}
+
+            <span class="jr-dashboard-list-value">{{this.value}}</span>
+
+        {{/if}}
+
+        {{#if this.label}}
+
+            <span class="jr-dashboard-list-label">{{this.label}}</span>
+
+        {{/if}}
+
+    </li>
+
+{{else}}
+
+    <p class="jr-dashboard-empty-widget">{{noEntries}}</p>
+
+{{/each}}
+
+</ul>
+
+</div>
